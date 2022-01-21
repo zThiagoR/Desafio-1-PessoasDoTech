@@ -8,7 +8,7 @@ TO-DO
 - Editar um Post [FEITO]
 - Deletar um Post [ANDAMENTO]
 - Listar os Posts de maneira paginada, permitindo filtro por data.
-- Obter informações de um Post por ID.
+- Obter informações de um Post por ID. [FEITO]
 ## Diferenciais
 
 - [Dockerize](https://www.docker.com/) sua aplicação.
