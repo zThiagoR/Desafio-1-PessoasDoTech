@@ -1,9 +1,9 @@
 import { PostsSchema } from "../models/posts";
 
 interface IPostRequest {
-    id: Number;
-    title: String;
-    description: String;
+    id: number;
+    title: string;
+    description: string;
 }
 
 class EditPostRepository {

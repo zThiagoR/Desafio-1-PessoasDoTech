@@ -1,19 +1,9 @@
-import { IPost } from "../interfaces/post";
+import { IPost, IPostRequest } from "../interfaces/post";
 import { countPosts, PostsSchema } from "../models/posts";
 
-interface IPostRequest {
-    title: String;
-    description: String;
-    body: String;
-}
 
 class CreatePostRepository {
-
-    // O repository é responsável por salvar no banco de dados.
-    // O repository não deve ter regras de negócio, apenas salvar no banco de dados.
-
     async save(post: IPostRequest) {
-        
         const { title, body, description } = post
 
         const PostSave: IPost = {

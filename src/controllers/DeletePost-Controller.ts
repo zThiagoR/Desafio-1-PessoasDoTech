@@ -6,7 +6,6 @@ class DeletePostController {
         // receber requisição em Number
         const { id } = req.params;
 
-        // chamar o service
         try {
             const post = await deletePostService.execute(Number(id));
             res.status(200).send({

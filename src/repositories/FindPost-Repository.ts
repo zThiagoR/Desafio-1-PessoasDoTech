@@ -1,7 +1,7 @@
 import { PostsSchema } from "../models/posts"
 
 class FindPostRepository {
-    async findPost(id: Number) {
+    async findPost(id: number) {
         const post = await PostsSchema.findOne({ id: id })
 
         if (!post) {

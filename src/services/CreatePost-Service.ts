@@ -1,14 +1,8 @@
 // Services são responsáveis por regras de negócio e lógica de negócios (validar, verificar se o usuário está autenticado, etc).
+import { IPostRequest } from "../interfaces/post"
 import { createPostRepository } from "../repositories/CreatePost-Repository"
 
-interface IPostRequest {
-    title: String;
-    description: String;
-    body: String;
-}
-
 class CreatePostService {
-
     async execute({title, body, description} : IPostRequest) {
 
         // Caso o usuário não tenha preenchido os campos 

@@ -1,11 +1,9 @@
-import { PostsSchema } from "../models/posts"
 import { editPostRepository } from "../repositories/EditPost-Repository"
-import { findPostRepository } from "../repositories/FindPost-Repository"
 
 interface IPostRequest {
-    id: Number;
-    title: String;
-    description: String;
+    id: number;
+    title: string;
+    description: string;
 }
 
 class EditPostService {

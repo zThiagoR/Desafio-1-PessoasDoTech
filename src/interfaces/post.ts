@@ -1,12 +1,14 @@
-interface IPost {
-    id: Number;
-    title: String;
-    description: String;
-    body: String;
-    created_at: String;
-    updated_at: String;
+export interface IPost {
+    id: number;
+    title: string;
+    description: string;
+    body: string;
+    created_at: string;
+    updated_at: string;
 }
 
-   
-
-export { IPost };
+export interface IPostRequest {
+    title: string;
+    description: string;
+    body: string;
+}

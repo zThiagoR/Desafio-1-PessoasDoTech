@@ -6,7 +6,6 @@ class FindPostController {
         // receber requisição em Number
         const { id } = req.params;
 
-        // chamar o service
         try {
             const post = await findPostService.execute(Number(id));
             res.status(200).send(post)
